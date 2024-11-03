@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.tableIncomes {
+  width: 100%;
+  margin-right: 10px;
+}
+.tableExpenses {
+  width: 100%;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    /* font-size: 50px; */
+  }
+  .tableIncomes {
+    width: 100%;
+    margin: 0;
+  }
+  .tableExpenses {
+    width: 100%;
+    margin: 0;
+  }
+}

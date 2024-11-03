@@ -1,0 +1,93 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #44140adc;
+  color: white;
+  width: 100%;
+  height: 50%;
+}
+
+.headerDate {
+  padding: 2%;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.headerBudget {
+  font-size: 2rem;
+  text-align: center;
+  padding-bottom: 5px;
+}
+.headerError {
+  padding: 2%;
+  margin: 2%;
+  background-color: rgb(224, 30, 30);
+  border: 1px solid black;
+  font-size: 1.5rem;
+}
+
+.headerIncomes {
+  width: 35%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+  border: 1px solid black;
+  background-color: #2b507f;
+  font-size: 1.5rem;
+}
+
+.headerExpenses {
+  width: 35%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+  border: 1px solid black;
+  background-color: rgba(240, 136, 88, 0.733);
+  margin: 2% 0;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    /* height: 50%; */
+    font-size: large;
+  }
+  .headerDate {
+    padding: 2%;
+    text-align: center;
+  }
+
+  .headerBudget {
+    font-size: 2em;
+    text-align: center;
+  }
+  .headerError {
+    padding: 2%;
+    margin: 2%;
+    background-color: rgb(224, 30, 30);
+    border: 1px solid black;
+  }
+
+  .headerIncomes {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+    border: 1px solid black;
+    background-color: #2b507f;
+  }
+
+  .headerExpenses {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+    border: 1px solid black;
+    background-color: rgba(240, 136, 88, 0.733);
+    margin: 2% 0;
+  }
+}

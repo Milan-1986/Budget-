@@ -1,0 +1,53 @@
+table {
+  border-collapse: collapse;
+  /* border-spacing: 25px; */
+  width: 100%;
+}
+
+.tableHeaderIncomes {
+  display: flex;
+  font-size: xx-large;
+  color: rgb(111, 181, 247);
+}
+
+.tableHeaderExpenses {
+  display: flex;
+  font-size: xx-large;
+  color: rgba(240, 136, 88, 1);
+}
+.tr td {
+  padding: 5px;
+  width: 100%;
+}
+.tr:nth-child(even) {
+  background-color: rgb(170, 211, 250, 0.5);
+}
+td:nth-child(2) {
+  color: rgb(224, 59, 59);
+  font-weight: 800;
+}
+
+.button {
+  opacity: 0;
+}
+
+tr:hover .button {
+  opacity: 1;
+}
+
+@media screen and (max-width: 1000px) {
+  .table {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+  }
+  .tableHeaderIncomes {
+    font-size: xx-large;
+    color: rgb(111, 181, 247);
+  }
+
+  .tableHeaderExpenses {
+    font-size: xx-large;
+    color: rgba(240, 136, 88, 1);
+  }
+}
