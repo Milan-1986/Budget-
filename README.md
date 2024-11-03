@@ -1,8 +1,23 @@
-# React + Vite
+#Budget app
+React app, prop drilling, RWD - CSS, local storage.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Overview
+This project is build with Vite - ReactJS. Through this project my goal is to learn how to manage PROP DRILLING.
 
-Currently, two official plugins are available:
+##How to Install and Run the Project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+You take the code and install dependencies.
+Then start app with command npm run dev.
+In the local environment please remove react strict mode. Because, when you are tring to save the data to local storage.
+Function do that with stale data. I didn't solve that bug now.
+
+Open http://localhost:3000 to view it in your browser.
+
+Or visit the link [Budget app](https://budget-prop-drilling.netlify.app/)
+
+##How to Use the Project
+First in form you chose what you want to add incomes "+" or expense "-" (outcomes, sound silly to me).
+Than add value - required, description-required and click on button-enter transaction.
+The transaction will appear in the table below.
+If you enter wrong transaction you can delete it on the button at the end of row.
+Button will appear on hover.
