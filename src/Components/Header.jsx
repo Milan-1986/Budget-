@@ -37,7 +37,7 @@ function Header({ incomesTransaction, expensesTransaction }) {
           : incomesValue < expensesValue
           ? "-"
           : null}
-        {Math.abs(incomesValue - expensesValue).toFixed(2)}
+        {Math.abs(incomesValue - expensesValue).toLocaleString()}
       </div>
       {incomesValue < expensesValue && (
         <span className={styles.headerError}>
@@ -45,17 +45,17 @@ function Header({ incomesTransaction, expensesTransaction }) {
         </span>
       )}
       <div className={styles.headerIncomes}>
-        Incomes <span>+{incomesValue.toFixed(2)}</span>
+        Incomes <span>+{incomesValue.toLocaleString()}</span>
         {incomesValue ? (
-          <span style={{ opacity: 0 }}>
-            {Math.round((expensesValue / incomesValue) * 100)} %
+          <span style={{ opacity: 0, display: "none" }}>
+            {`${Math.round((expensesValue / incomesValue) * 100)}%`}
           </span>
         ) : null}
       </div>
       <div className={styles.headerExpenses}>
-        Expenses <span>-{expensesValue.toFixed(2)}</span>
-        {incomesValue ? (
-          <span>{Math.round((expensesValue / incomesValue) * 100)} %</span>
+        Expenses <span>-{expensesValue.toLocaleString()}</span>
+        {incomesValue && expensesValue ? (
+          <span>{`${Math.round((expensesValue / incomesValue) * 100)}%`}</span>
         ) : null}
       </div>
     </div>

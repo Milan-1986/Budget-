@@ -7,27 +7,24 @@
 }
 
 .formSelect {
-  display: flex;
   height: 50px;
   width: 50px;
   border-radius: 10px;
 }
 
 .formDescription {
-  display: flex;
   height: 50px;
   margin-left: 15px;
   border-radius: 10px;
   padding: 5px;
   font-size: 1rem;
+  text-align: center;
 }
 
 .formValue {
-  display: flex;
   margin-left: 15px;
   height: 50px;
   width: 20%;
-
   border-radius: 10px;
   padding: 5px;
   text-align: center;
@@ -45,14 +42,14 @@
   color: white;
   border-radius: 10px;
   padding: 5px;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .formBtnExpense {
   background-color: rgba(248, 46, 46, 0.842);
   border-radius: 10px;
   padding: 5px;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 @media screen and (max-width: 900px) {
@@ -74,20 +71,21 @@
     margin: 0;
     height: 50px;
     width: 50%;
-    font-size: 1.5rem;
+    font-size: 1rem;
+    text-align: center;
   }
 
   .formValue {
     margin: 0;
     width: 50%;
     height: 50px;
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   .formBtn {
     display: flex;
     height: 50px;
     margin: 0;
     width: fit-content;
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 }

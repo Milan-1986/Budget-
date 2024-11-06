@@ -25,7 +25,8 @@ function Table({
             : { color: "rgb(111, 181, 247)" }
         }
       >
-        +{item.value?.toFixed(2)}
+        {children === "Incomes" ? "+" : "-"}
+        {Number(item.value)?.toLocaleString()}
       </td>
       {children !== "Incomes" && (
         <td>
